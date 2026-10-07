@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LinkedIn 中文翻译助手</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="panel">
+    <div class="title">LinkedIn 中文翻译助手</div>
+    <div class="subtitle">档案页英文 → 简体中文</div>
+
+    <label class="row">
+      <span>启用翻译</span>
+      <input id="enabled" type="checkbox" />
+    </label>
+
+    <label class="row">
+      <span>进入档案自动翻译</span>
+      <input id="autoTranslate" type="checkbox" />
+    </label>
+
+    <label class="row">
+      <span>悬停显示英文原文</span>
+      <input id="showOriginalOnHover" type="checkbox" />
+    </label>
+
+    <div class="actions">
+      <button id="translateNow" class="primary">翻译当前档案</button>
+      <button id="restore">还原英文</button>
+    </div>
+
+    <div id="status" class="status">仅在 linkedin.com/in/... 档案页运行</div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

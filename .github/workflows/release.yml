@@ -1,0 +1,32 @@
+name: Release extension
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package extension
+        run: ./tools/package.sh
+      - name: SHA-256
+        run: sha256sum dist/linkedin-cn-translator.zip > dist/SHA256SUMS.txt
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: linkedin-cn-translator
+          path: dist/*
+      - name: Publish GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/linkedin-cn-translator.zip
+            dist/SHA256SUMS.txt
