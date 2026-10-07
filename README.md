@@ -1,12 +1,12 @@
-# LinkedIn CN Translator
+# LinkLingo
 
-Chrome extension that translates English text on LinkedIn profile pages into Simplified Chinese. It supports LinkedIn SPA navigation, dynamically loaded sections, one-click restore, request caching, and Windows/macOS Chrome.
+LinkLingo is a Chrome extension that translates English text on LinkedIn profile pages into Simplified Chinese. It supports LinkedIn SPA navigation, dynamically loaded sections, one-click restore, request caching, and Windows/macOS Chrome.
 
 Chinese documentation: [README.zh-CN.md](README.zh-CN.md)
 
 ## Quick start
 
-1. Download and unzip `linkedin-cn-translator.zip`.
+1. Download and unzip `LinkLingo.zip`.
 2. Open `chrome://extensions/`.
 3. Enable **Developer mode**.
 4. Click **Load unpacked** and select the extracted directory.
