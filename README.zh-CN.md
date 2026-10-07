@@ -1,4 +1,4 @@
-# LinkedIn 中文翻译助手
+# LinkLingo — 领英翻译
 
 一个面向 LinkedIn 网页版个人档案的 Chrome 扩展。打开 `linkedin.com/in/...` 后，会自动把英文档案正文翻译成简体中文，并支持一键还原原文。
 
@@ -18,7 +18,7 @@
 
 ### Windows
 
-1. 下载 Release 里的 `linkedin-cn-translator.zip` 并解压。
+1. 下载 Release 里的 `LinkLingo.zip` 并解压。
 2. Chrome 打开 `chrome://extensions/`。
 3. 开启右上角「开发者模式」。
 4. 点击「加载已解压的扩展程序」。
@@ -27,11 +27,11 @@
 
 ### macOS
 
-1. 下载 Release 里的 `linkedin-cn-translator.zip`，双击解压。
+1. 下载 Release 里的 `LinkLingo.zip`，双击解压。
 2. Chrome 打开 `chrome://extensions/`。
 3. 开启右上角「开发者模式」。
 4. 点击「加载已解压的扩展程序」。
-5. 选择解压后的 `linkedin-cn-translator` 文件夹。
+5. 选择解压后的 `LinkLingo` 文件夹。
 6. 打开或刷新任意 LinkedIn 档案页。
 
 > Chrome 的扩展目录不能随意删除或移动；移动后需要重新「加载已解压的扩展程序」。
@@ -67,7 +67,7 @@ macOS / Linux：
 ## 项目结构
 
 ```text
-linkedin-cn-translator/
+LinkLingo/
 ├─ manifest.json
 ├─ background.js
 ├─ content.js
