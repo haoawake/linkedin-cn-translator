@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "LinkedIn 中文翻译助手",
+  "name": "LinkLingo",
   "version": "1.0.0",
-  "description": "自动将 LinkedIn 档案页中的英文内容翻译成简体中文，可随时还原。",
+  "description": "LinkedIn 档案即时中文翻译：英文自动转为简体中文，并可随时还原原文。",
   "permissions": [
     "storage",
     "tabs"
@@ -15,7 +15,7 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "LinkedIn 中文翻译助手",
+    "default_title": "LinkLingo",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "assets/icon16.png",
