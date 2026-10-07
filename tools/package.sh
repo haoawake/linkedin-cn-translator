@@ -4,12 +4,12 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$ROOT/dist"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
-mkdir -p "$OUT" "$TMP/linkedin-cn-translator"
-cp "$ROOT"/{manifest.json,background.js,content.js,content.css,popup.html,popup.css,popup.js} "$TMP/linkedin-cn-translator/"
-cp -R "$ROOT/assets" "$TMP/linkedin-cn-translator/assets"
-cp "$ROOT/README.zh-CN.md" "$TMP/linkedin-cn-translator/README.md"
+mkdir -p "$OUT" "$TMP/LinkLingo"
+cp "$ROOT"/{manifest.json,background.js,content.js,content.css,popup.html,popup.css,popup.js} "$TMP/LinkLingo/"
+cp -R "$ROOT/assets" "$TMP/LinkLingo/assets"
+cp "$ROOT/README.zh-CN.md" "$TMP/LinkLingo/README.md"
 (
   cd "$TMP"
-  zip -qr "$OUT/linkedin-cn-translator.zip" linkedin-cn-translator
+  zip -qr "$OUT/LinkLingo.zip" LinkLingo
 )
-echo "Created: $OUT/linkedin-cn-translator.zip"
+echo "Created: $OUT/LinkLingo.zip"
