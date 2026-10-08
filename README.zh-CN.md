@@ -18,7 +18,7 @@
 
 ### Windows
 
-1. 下载 Release 里的 `LinkLingo.zip` 并解压。
+1. 下载 Release 里的 `LinkLingo-win-universal.zip` 并解压。
 2. Chrome 打开 `chrome://extensions/`。
 3. 开启右上角「开发者模式」。
 4. 点击「加载已解压的扩展程序」。
@@ -27,7 +27,7 @@
 
 ### macOS
 
-1. 下载 Release 里的 `LinkLingo.zip`，双击解压。
+1. 下载 Release 里的 `LinkLingo-mac-universal.zip`，双击解压。
 2. Chrome 打开 `chrome://extensions/`。
 3. 开启右上角「开发者模式」。
 4. 点击「加载已解压的扩展程序」。
@@ -36,7 +36,7 @@
 
 > Chrome 的扩展目录不能随意删除或移动；移动后需要重新「加载已解压的扩展程序」。
 
-## 翻译服务
+> **跨平台说明：** Chrome 扩展无需分别编译。Windows 和 macOS 安装包内部是相同的 Chrome 扩展，仅下载文件名按系统区分，方便工具库识别。\n\n## 翻译服务
 
 默认使用 Google Translate 的无需 API Key 网页端点：
 
